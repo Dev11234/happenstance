@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- this is navbar...link left -->
+    <div class="navbar">
+    <div class="navlist">
+    <ul class="content"></ul>
+    <li id="one"><i class="ri-map-pin-line"></i>Stores </li>
+    <li id="two"><i class="ri-user-line"></i>Login/register</li>
+    <li id="three"><i class="ri-heart-line"></i></li>
+    <li id="four"><i class="ri-shopping-cart-line"></i></li>
+    </div></div> 
+    <br>
+    <div class="navbar2">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" height="35px">
+        </div>
+        <ul class="nav-links">
+            <li id="li1">Women</li>
+            <li id="li2">Men</li>
+            <li id="li3">HapStore</li>
+        </ul>
+        <div class="input-container">
+            <input type="text" placeholder="search">
+        </div>
+    </div>
+    <br>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="images/banner1.webp" alt="Banner 1">
+        </div>
+        <div class="mySlides">
+            <img src="images/banner2.webp" alt="Banner 2">
+        </div>
+        <div class="mySlides">
+            <img src="images/banner3.webp" alt="Banner 3">
+        </div>
+    </div>
+    <br>
+              <!-- section divider -->
+    <div class="section-divider">
+        <span>hap category</span>
+    </div>
+    <!-- content photos only -->
+    <br>
+    <div class="main-container">
+        <div><img src="images/shoe1.webp" alt="Shoe 1"></div>
+        <div><img src="images/shoe2.webp" alt="Shoe 2"></div>
+        <div><img src="images/shoe3.webp" alt="Shoe 3"></div>
+        <div><img src="images/shoe4.webp" alt="Shoe 4"></div>
+        <div><img src="images/shoe5.webp" alt="Shoe 5"></div>
+        <div><img src="images/shoe6.png" alt="Shoe 6"></div>
+        <div><img src="images/shoe7.png" alt="Shoe 7"></div>
+        <div><img src="images/shoe8.webp" alt="Shoe 8"></div>
+    </div>
+    <!-- section divider 2 -->
+    <div class="section-divider">
+        <span>HAPS MOMENTS</span>
+    </div>
+    <!-- MOMENTS -->
+    <div class="main-container2">
+        <div class="video1"><Video controls><source src="images/videoshoe1.mp4"></Video></div>
+        <div class="image1"><img src="images/imagebtwnvid1.webp" alt="Shoe 2"></div>
+        <div class="image2"><img src="images/imagebtwnvid2.webp" alt="Shoe 3"></div>
+        <div class="video2"><video controls><source src="images/videoshoe2.mp4"></video></div>
+        <div class="video3"><video controls><source src="images/videoshoe3.mp4"></video></div>
+        <div class="video4"><video controls><source src="images/videoshoe4.mp4"></video></div>
+        <div class="video5"><video controls><source src="images/videoshoe5.mp4"></video></div>
+        <div class="image3"><img src="images/imagebtwnvid3.webp" alt="Shoe 8"></div>
+        <div class="image4"><img src="images/imagebtwnvid4.webp" alt="Shoe 1"></div>
+        <div class="image5"><img src="images/imagebtwnvid5.webp" alt="Shoe 2"></div>
+        <div class="video6"><video controls><source src="images/videoshoe6.mp4"></video></div>
+        <div class="video7"><video controls><source src="images/videoshoe7.mp4"></video></div>
+    </div>
+        <footer>
+    <div class="footer">
+        <div>
+            <h3><strong>My account</strong></h3>
+            <ul>
+                <li>login/Register</li>
+                <li>My Wishlist</li>
+                <li>My orders</li>
+                <li>Track order</li>
+            </ul>
+        </div>
+        <div>
+            <h3><strong>HELP & CONTACT</strong></h3>
+            <ul>
+                <li>Help</li>
+                <li>Trade & Enquiry</li>
+                <li>FAQ</li>
+                <li>Know your size</li>
+                <li>Return/Exchange</li>
+            </ul>
+        </div>
+        <div>
+            <h3><strong>ABOUT HAPPENSTANCE</strong></h3>
+            <ul>
+                <li>Company</li>
+                <li>Our Faces</li>
+                <li>Science of Comfort</li>
+                <li>Haps Stories</li>
+                <li>Stores Near me</li>
+            </ul>
+        </div>
+        <div>
+            <h3><strong>LEGAL</strong></h3>
+            <ul>
+                <li>Tearms & Condition</li>
+                <li>Privacy Policy</li>
+                <li>Payment methods</li>
+                <li>Shipping & Return policy</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-divider">
+        <span>Follow Us</span>
+    </div>
+    <br>
+    <div>
+        <img src="images/followus image.png" alt="">
+    </div>
+</footer>
+<!-- script temporarily set for slider timing
+ 
+         its not being oversmart...but effort to tell you
+         
+         the student is determined 
+         thanks for accepting me in institute
+                                     -divyang   -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+    </script>
+
+</body>
+</html>
